@@ -1,5 +1,4 @@
-import "../App.css";
-import logo from "../helper/logo.png";
+import logo from "../helper/logo.svg";
 
 const Navbar = () => {
   return (
@@ -8,13 +7,14 @@ const Navbar = () => {
         <img src={logo} alt="" width="100px" />
       </div>
       <div className="links">
-        <a href="#">Horoscope</a>
-        <a href="#">Daily</a>
-        <a href="#">Tarot</a>
-        <a href="#">Article</a>
-        <a href="#">Contact</a>
+        <a href="#horoscope">Horoscope</a>
+        <a href="#daily">Daily</a>
+        <a href="#tarot">Tarot</a>
+        <a href="#article">Article</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   );
 };
+
 export default Navbar;
