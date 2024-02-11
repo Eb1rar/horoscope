@@ -1,15 +1,11 @@
-import React from "react";
+import { data } from "../helper/data";
+import Card from "./Card";
 
-const Main = ({ data }) => {
+const Main = () => {
   return (
-    <div className="main">
-      {data.map(({ id, title, date, desc, image }) => (
-        <div key={id} className="container">
-          <img src={image} alt="" width="450px" height="330px" />
-          <h2 className="sign">{title}</h2>
-          <p className="card-over">{desc}</p>
-          <h3 className="date">{date}</h3>
-        </div>
+    <div className="card-container">
+      {data.map((item, index) => (
+        <Card {...item} key={index} />
       ))}
     </div>
   );
