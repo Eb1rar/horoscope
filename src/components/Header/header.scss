@@ -1,0 +1,28 @@
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+header {
+  font-family: "Rubik Distressed", cursive;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 3rem;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    font-size: 2rem;
+  }
+}
