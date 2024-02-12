@@ -1,4 +1,4 @@
-import { data } from "../helper/data";
+import { data } from "../../helper/data";
 import Card from "./Card";
 
 const Main = () => {
